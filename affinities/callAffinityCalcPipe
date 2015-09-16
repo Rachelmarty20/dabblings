@@ -1,0 +1,123 @@
+#! /usr/bin/env python
+
+import sys
+import itertools
+from optparse import OptionParser
+#from Bio import SeqIO
+
+"""
+Generate sge script to call mhc_i and netchop 3.1 in parallel
+Inputs:  List of HLA alleles
+         List of mutations
+         Directory where protein fasta files are located
+         Directory where results should be stored
+Outputs: Affinity file with affinities for 
+"""
+
+class CmdOpts(object):
+   usage="""%prog [options] -f <path to file> -a <path to file> -d <path to dir> -o <path to dir> -k <integer>
+
+   Generate a file with commands to run affinity calculation pipeline
+   
+   -f file with gene-mutation pairs, 1 per line 
+   -a file with HLA alleles, 1 per line
+   -k kmer size (8,9 or 10)
+   -d path to directory where fasta files are stored
+   -o path to directory where outputs will be written
+
+   Example:
+      scripts/callAffinityCalcPipe -f  -a  -k -d -o  > run_affinity_pipe_sge.sh
+   
+   """
+   def __init__(self):
+      parser = OptionParser(usage=CmdOpts.usage)
+      parser.add_option("-f", "--file", dest="mutationfile",
+                        help="""File with gene mutation pairs, 1 pair per line""")
+      parser.add_option("-a", "--alleles", dest="allelefile",
+                        default="/scratch", help="""List of HLA alleles, 1 per line """)
+      parser.add_option("-k", "--kmer", dest="kmersize",
+                        default="10", help="""Size of kmer to consider """)
+      parser.add_option("-d", "--datadir", dest="datadir",
+                        help="""Directory where fasta files are stored """)
+      parser.add_option("-o", "--output", dest="outputdir",
+                        default="/scratch",help="""Directory where output files will be written """)
+      (opts, args) = parser.parse_args()
+
+      if not opts.mutationfile or not opts.allelefile:
+         parser.error("Incorrect input args")
+      
+      if opts.datadir.endswith("/"):
+         opts.datadir = opts.dataloc[:-1]
+
+      if opts.outputdir.endswith("/"):
+         opts.outputdir = opts.outputdir[:-1]
+
+      self.__dict__.update(opts.__dict__)
+
+
+def main():
+   
+   opts = CmdOpts()
+
+   # Read in mutations
+   f = file(opts.mutationfile,'r')
+   pairs = [[x.strip().split("_")[0],x.strip().split("_")[1]] for x in f.readlines()]
+   f.close()
+   
+   # Read in hla alleles
+   f = file(opts.allelefile,'r')
+   hlalist = [x.strip() for x in f.readlines()]
+   f.close()
+
+   # Location where fasta files will be stored
+   fadir = opts.datadir
+   
+   # Location where files will be saved
+   destdir = opts.outputdir
+
+   # Generate all combinations of mutation vs MHC allele
+   genes = []
+   mutations = []
+   alleles1 = []
+   alleles2 = []
+   for allele in hlalist:
+      for pair in pairs:
+         alleles1.append(allele.split("*")[0])
+         alleles2.append(allele.split("*")[1])
+         genes.append(pair[0])
+         mutations.append(pair[1])
+
+   # Output sge script      
+   print "#! /bin/csh"
+   print "#$ -S /bin/csh "
+   print "#$ -o /dev/null"
+   print "#$ -e /dev/null"
+   print "#$ -cwd"
+   print "#$ -t 1-" +  str(len(alleles1))
+   print "#$ -l h_rt=08:00:00,h_vmem=1G"
+   print "#$ -l long"
+   print "#$ -p -11"
+   print ""
+   print "set mutations=(" + " ".join(mutations) + ")"
+   print "set genes=(" + " ".join(genes) + ")"
+   print "set hlas=(" + " ".join(alleles1) + ")"
+   print "set nums=(" + " ".join(alleles2) + ")"
+   print ""
+   print "set mutation=$mutations[$SGE_TASK_ID]"
+   print "set gene=$genes[$SGE_TASK_ID]"
+   print "set hla=$hlas[$SGE_TASK_ID]"
+   print "set num=$nums[$SGE_TASK_ID]"
+   print ""
+#   print "setenv TMPDIR /tmp"
+#   print "setenv NETCHOP /cellar/users/hcarter/programs/netchop-3.1/"
+   print ""
+   print "date"
+   print "hostname"
+   print "mkdir " + destdir + "/$gene\_$mutation"
+   print "/cellar/users/ramarty/programs/mhc_i/src/predict_binding.py IEDB_recommended $hla\"*\"$num "+opts.kmersize+" "+fadir+"/$gene\_$mutation.fsa > "+destdir+"/$gene\_$mutation/$hla\"*\"$num.affinities"
+   #print "/cellar/users/hcarter/programs/netchop-3.1/netchop "+fadir+"/$gene\_$mutation.fa > "+destdir+"/$gene\_$mutation/netchop.out"
+   print "date"
+   
+
+if __name__ == "__main__":
+   main()

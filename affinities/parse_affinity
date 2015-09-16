@@ -1,0 +1,133 @@
+#! /usr/bin/env python
+
+import sys, os
+
+class FileReader(object):
+
+   def __init__(self, filename):
+      self.fh = file(filename, 'r')
+      self.header = self.fh.readline()
+
+   def __iter__(self):
+      return self
+
+   def next(self):
+      while True:
+         line = self.fh.readline()
+         if line == "":
+            self.fh.close()
+            raise StopIteration
+         line = line[:-1]
+         return Affinity(line.split("\t"))
+
+class Affinity(object):
+
+   def __init__(self, row):
+      self.PredictionMethod = row[0]
+      self.MHC = row[1]
+      self.PeptideLength = row[2]
+      self.Peptide = row[3]
+      self.Method_used = row[4]
+      self.Percentile_Rank = row[5]
+      self.ANN_IC50 = row[6]
+      self.ANN_Rank = row[7]
+      self.SMM_IC50 = row[8]
+      self.SMM_Rank = row[9]
+      self.CombLib_IC50 = row[10]
+      self.CombLib_Rank = row[11]
+      self.NetMHCpan_IC50 = row[12]
+      self.NetMHCpan_Rank = row[13]
+      self.IC50 = 100000
+      self.__process()
+
+   def __process(self):
+      if self.Method_used == "Consensus (ANN,SMM)":
+         self.IC50 = str(min(float(self.ANN_IC50),float(self.SMM_IC50)))
+      elif self.Method_used == "NetMHCpan":
+         self.IC50 = self.NetMHCpan_IC50
+      elif self.Method_used == "SMM":
+         self.IC50 = self.SMM_IC50
+      elif self.Method_used == "ANN":
+         self.IC50 = self.ANN_IC50
+      else:
+         raise Exception(self.Method_used + " not included in code yet")
+
+class Peptide(object):
+   def __init__(self, MHC, Peptide, IC50):
+      self.UID = MHC +"_" + Peptide
+      self.MHC = MHC
+      self.Peptide = Peptide
+      self.IC50 = IC50
+
+class AffTable(object):
+
+   def __init__(self, hlafiles):
+      self.minIC50byHLA = {}
+      self.allIC50byHLAPep = {}
+      for filename in hlafiles:
+         hla = filename.split("/")[-1].split(".")[0]
+         for affinity in FileReader(filename):
+            self.__addAffinity(affinity, hla)
+
+   def __addAffinity(self, aff, hla):
+      if self.minIC50byHLA.has_key(hla):
+         cIC50 = self.minIC50byHLA.get(hla)
+         if float(aff.IC50) < float(cIC50):
+            self.minIC50byHLA[hla] = aff.IC50
+      else:
+         self.minIC50byHLA[hla] = aff.IC50
+      pep = Peptide(hla, aff.Peptide, aff.IC50)
+      if self.allIC50byHLAPep.has_key(pep.Peptide):
+         self.allIC50byHLAPep[pep.Peptide][pep.MHC] = pep.IC50
+      else:
+         self.allIC50byHLAPep[pep.Peptide] = {}
+         self.allIC50byHLAPep[pep.Peptide][pep.MHC] = pep.IC50
+         
+   def getAff(self, hla):
+      return self.minIC50byHLA.get(hla)
+
+   def getPepInfo(self):
+      return self.allIC50byHLAPep.keys()
+
+   def getAllAff(self, pep, hla):
+      return self.allIC50byHLAPep.get(pep).get(hla)
+
+def main():
+
+   dirname = sys.argv[1]
+   if dirname.endswith("/"):
+      dirname = dirname[:-1]
+   mutation = dirname.split("/")[-1]
+
+   f = file(sys.argv[2],'r')
+   hlalist = [x.strip() for x in f.readlines()]
+   f.close()
+
+   dircont = os.listdir(dirname)
+   hlafiles = [dirname + "/" + x for x in dircont if x.endswith(".affinities")]
+
+   hlaTab = AffTable(hlafiles)
+
+   if sys.argv[3] == "min":
+      text = [mutation]
+      for hla in hlalist:
+         aff = hlaTab.getAff(hla)
+         if aff == None:
+            aff = "-"
+         text.append(aff)
+      print "\t".join(text)
+   elif sys.argv[3] == "all":
+      peps = hlaTab.getPepInfo()
+      for pep in peps:
+         text = [mutation]
+         text.append(pep)
+         for hla in hlalist:
+            aff = hlaTab.getAllAff(pep, hla)
+            if aff == None:
+               aff = "-"
+            text.append(aff)
+         print "\t".join(text) 
+   
+
+if __name__ == "__main__":
+   main()

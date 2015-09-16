@@ -1,0 +1,11 @@
+PLINK v1.90b3b 64-bit (15 Jan 2015)
+5 arguments: --bfile tcga_filtered_hwe --out tcga_filtered_hwe --recode
+Hostname: saperavi
+Working directory: /cellar/users/ramarty/Projects/hla_new/scripts/typing_the_hla/snp2hla
+Start time: Tue Aug 18 13:59:08 2015
+
+Random number seed: 1439931548
+128938 MB RAM detected; reserving 64469 MB for main workspace.
+Error: Failed to open tcga_filtered_hwe.bed.
+
+End time: Tue Aug 18 13:59:08 2015

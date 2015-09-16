@@ -1,0 +1,6 @@
+fisher_test.py:72: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  mutations2['Mutation'] = mutations2[['gene', 'residue']].apply(combine, axis=1)
