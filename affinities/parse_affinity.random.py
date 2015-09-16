@@ -30,7 +30,7 @@ def main():
     # concat all of the data frames and output to a file
     # TODO: we might get a weird extra numerical row... not sure why
     result = pd.concat(all_mutation_dfs, axis=1)
-    result.to_csv('/cellar/users/ramarty/Projects/hla_new/data/affinities/all_affinities.original.csv')
+    result.to_csv('/cellar/users/ramarty/Projects/hla_new/data/affinities/all_affinities.random.csv')
 
 
 
