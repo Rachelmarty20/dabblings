@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9075fb9-2d60-496b-b779-4df3ab2ba8af" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/affinities/parse_affinity.random.py" afterPath="$PROJECT_DIR$/affinities/parse_affinity.random.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/affinities/parse_affinity.original.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dabblings.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,13 +46,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parse_affinity.random.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="parse_affinity.random.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/affinities/parse_affinity.random.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64254063" vertical-offset="30" max-vertical-offset="1245">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="508" max-vertical-offset="1245">
+              <caret line="77" column="20" selection-start-line="2" selection-start-column="0" selection-end-line="77" selection-end-column="20" />
               <folding>
                 <element signature="e#58#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parse_affinity.original.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/affinities/parse_affinity.original.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7533235" vertical-offset="0" max-vertical-offset="1230">
+              <caret line="34" column="97" selection-start-line="34" selection-start-column="97" selection-end-line="34" selection-end-column="97" />
+              <folding>
+                <element signature="e#68#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,6 +96,7 @@
       <list>
         <option value="$PROJECT_DIR$/affinities/parse_affinity.py" />
         <option value="$PROJECT_DIR$/affinities/parse_affinity.random.py" />
+        <option value="$PROJECT_DIR$/affinities/parse_affinity.original.py" />
       </list>
     </option>
   </component>
@@ -417,10 +431,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/affinities/parse_affinity.random.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64254063" vertical-offset="30" max-vertical-offset="1245">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="508" max-vertical-offset="1245">
+          <caret line="77" column="20" selection-start-line="2" selection-start-column="0" selection-end-line="77" selection-end-column="20" />
           <folding>
             <element signature="e#58#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/affinities/parse_affinity.original.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7533235" vertical-offset="0" max-vertical-offset="1230">
+          <caret line="34" column="97" selection-start-line="34" selection-start-column="97" selection-end-line="34" selection-end-column="97" />
+          <folding>
+            <element signature="e#68#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
