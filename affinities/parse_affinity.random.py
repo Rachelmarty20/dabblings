@@ -23,9 +23,12 @@ def main():
     # TODO: remove restriction of first thousand
     all_mutation_dfs = []
     for mutation in mutations[:1000]:
-        print mutation
-        all_mutation_dfs.append(get_min_affinities('{0}/{1}/all.affinities'.format(affinities_directory, mutation),
-                                                   mutation))
+        try:
+            print mutation
+            all_mutation_dfs.append(get_min_affinities('{0}/{1}/all.affinities'.format(affinities_directory, mutation),
+                                                       mutation))
+        except:
+            print "failed: ", mutation
 
     # concat all of the data frames and output to a file
     # TODO: we might get a weird extra numerical row... not sure why
