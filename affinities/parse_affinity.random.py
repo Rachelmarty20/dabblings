@@ -22,7 +22,7 @@ def main():
     # create a list of dataframes for each mutation list
     # TODO: remove restriction of first thousand
     all_mutation_dfs = []
-    for mutation in mutations[:1000]:
+    for mutation in mutations:
         try:
             print mutation
             all_mutation_dfs.append(get_min_affinities('{0}/{1}/all.affinities'.format(affinities_directory, mutation),
