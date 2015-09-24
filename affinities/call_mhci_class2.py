@@ -12,7 +12,7 @@ affinities_directory = '/data/nrnb01/ramarty/hla/affinities_random_ii'
 with open(file_mhc_alleles) as f:
     mhc_alleles = [allele.strip() for allele in f.readlines()]
 
-cmd = 'mkdir /data/nrnb01/ramarty/hla/affinities_random_ii/{0}/all.affinities'.format(mutation)
+cmd = 'mkdir /data/nrnb01/ramarty/hla/affinities_random_ii/{0}'.format(mutation)
 os.system(cmd)
 
 print "trying"
