@@ -6,7 +6,7 @@ import sys
 mutation = sys.argv[1]
 
 # TODO: create a list of human mhc II alleles
-file_mhc_alleles = '/cellar/users/ramarty/Projects/hla_new/data/affinities/human_MHC_alleles_uniq.ii.unique.txt'
+file_mhc_alleles = '/cellar/users/ramarty/Projects/hla_new/data/affinities/mhc_ii_alleles.unique.txt'
 affinities_directory = '/data/nrnb01/ramarty/hla/affinities_random_ii'
 
 with open(file_mhc_alleles) as f:
