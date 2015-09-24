@@ -14,11 +14,11 @@ with open(file_mhc_alleles) as f:
 
 print "trying"
 allele = mhc_alleles[0]
-cmd = '/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py IEDB_recommended {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa > /data/nrnb01/ramarty/hla/affinities_random/{1}/all.affinities'.format(allele, mutation)
+cmd = '/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py IEDB_recommended {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa > /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities'.format(allele, mutation)
 print cmd
 os.system(cmd)
 
 
 for allele in mhc_alleles[1:]:
-    cmd = '/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py IEDB_recommended {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa >> /data/nrnb01/ramarty/hla/affinities_random/{1}/all.affinities'.format(allele, mutation)
+    cmd = '/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py IEDB_recommended {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa >> /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities'.format(allele, mutation)
     os.system(cmd)
