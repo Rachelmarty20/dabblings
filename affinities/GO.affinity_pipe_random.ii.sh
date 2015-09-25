@@ -17,5 +17,6 @@ bash ~/.bash_profile
 
 date
 hostname
-python /cellar/users/ramarty/Projects/hla_new/scripts/affinities/call_mhcii.py $mutation
+mkdir /data/nrnb01/ramarty/hla/affinities_random_ii/$mutation
+python /cellar/users/ramarty/Projects/hla_new/scripts/affinities/call_mhcii.py $mutation > /data/nrnb01/ramarty/hla/affinities_random_ii/$mutation/all.affinities
 date

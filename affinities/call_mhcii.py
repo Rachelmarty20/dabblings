@@ -1,9 +1,10 @@
 __author__ = 'rachel'
 
+sys.path.insert(0, '/cellar/users/ramarty/programs/mhc_ii')
+
 import os
 import sys
-import time
-import subprocess
+import mhc_II_binding
 
 mutation = sys.argv[1]
 
@@ -19,21 +20,11 @@ try:
 except:
     print "directory exists"
 
-output = []
 for allele in mhc_alleles:
-    cmd = "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py consensus3 {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa".format(allele, mutation)
-    # IEDB_recommended '{0}' /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa > /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities".format(allele, mutation)"
-    cmd_list = cmd.split()
-    try:
-        output.append(subprocess.check_output(cmd_list, shell=True))
-        print allele
-        print subprocess.check_output(cmd_list, shell=True)
-    except:
-        print "fail: ", allele
+    infile = "/cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa".format(mutation)
+    allele = allele.replace("_","-").replace("H-2","H2")
+    method = "consensus3""
+    seq = [('sequence_format', 'auto'), ('sort_output', 'position_in_sequence'), ('cutoff_type', 'none'), ('output_format', 'ascii'), ('allele', allele), ('sequence_file', infile), ('pred_method', method)]
+    form = dict(seq)
 
-print len(output)
-
-#print "/data/nrnb01/ramarty/hla/affinities_random_ii/{0}/all.affinities".format(mutation)
-with open("/data/nrnb01/ramarty/hla/affinities_random_ii/{0}/all.affinities".format(mutation), 'w') as outfile:
-    print output
-    outfile.write(output)
+    mhc_II_binding.main(form)
