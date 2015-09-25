@@ -1,9 +1,9 @@
 __author__ = 'rachel'
 
-sys.path.insert(0, '/cellar/users/ramarty/programs/mhc_ii')
 
 import os
 import sys
+sys.path.insert(0, '/cellar/users/ramarty/programs/mhc_ii')
 import mhc_II_binding
 
 mutation = sys.argv[1]
