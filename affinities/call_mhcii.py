@@ -34,4 +34,5 @@ print len(output)
 
 #print "/data/nrnb01/ramarty/hla/affinities_random_ii/{0}/all.affinities".format(mutation)
 with open("/data/nrnb01/ramarty/hla/affinities_random_ii/{0}/all.affinities".format(mutation), 'w') as outfile:
-    outfile.write("\n".join(output))
+    print output
+    outfile.write(output)
