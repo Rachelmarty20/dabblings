@@ -20,7 +20,6 @@ for mutation in mutations:
 
     cmd = 'mkdir /data/nrnb01/ramarty/hla/affinities_random_ii/{0}'.format(mutation)
     os.system(cmd)
-
     print "trying"
     allele = mhc_alleles[0]
     cmd_1 = '/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py IEDB_recommended {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa > /data/nrnb01/ramarty/hla/affinities_random_ii/{2}/all.affinities'.format(allele, mutation, mutation)
