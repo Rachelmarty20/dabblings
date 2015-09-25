@@ -17,9 +17,9 @@ allele = mhc_alleles[0]
 
 with open("/data/nrnb01/ramarty/hla/affinities_random_ii/scripts/{0}.script.sh".format(mutation), 'w') as outfile:
 
-    cmd = "python /cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py consensus3 {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa".format(allele, mutation)
+    cmd = "python /cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py consensus3 {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa > /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities".format(allele, mutation)
     outfile.write(cmd+"\n")
 
     for allele in mhc_alleles[1:]:
-        cmd = "python /cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py consensus3 {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa".format(allele, mutation)
+        cmd = "python /cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py consensus3 {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa >> /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities".format(allele, mutation)
         outfile.write(cmd+"\n")
