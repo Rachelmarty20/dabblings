@@ -25,9 +25,9 @@ for allele in mhc_alleles:
     # IEDB_recommended '{0}' /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa > /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities".format(allele, mutation)"
     cmd_list = cmd.split()
     try:
-        output.append(subprocess.check_output(cmd_list))
+        output.append(subprocess.check_output(cmd_list, shell=True))
         print allele
-        print subprocess.check_output(cmd_list)
+        print subprocess.check_output(cmd_list, shell=True)
     except:
         print "fail: ", allele
 
