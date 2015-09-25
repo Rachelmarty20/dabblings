@@ -24,8 +24,11 @@ for allele in mhc_alleles:
     cmd = "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py consensus3 {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa".format(allele, mutation)
     # IEDB_recommended '{0}' /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa > /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities".format(allele, mutation)"
     cmd_list = cmd.split()
-    output.append(subprocess.check_output(cmd_list))
-    print allele
+    try:
+        output.append(subprocess.check_output(cmd_list))
+        print allele
+    except:
+        print "fail: ", allele
 
 print len(output)
 
