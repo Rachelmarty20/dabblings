@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="call_mhci.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="call_mhci.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/affinities/call_mhci.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="390">
+            <state vertical-scroll-proportion="0.039011702" vertical-offset="0" max-vertical-offset="769">
               <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
               <folding>
                 <element signature="e#1#10#0" expanded="true" />
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="old.call_mhcii.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="old.call_mhcii.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/affinities/old.call_mhcii.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34526855" vertical-offset="0" max-vertical-offset="782">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+              <caret line="21" column="235" selection-start-line="21" selection-start-column="235" selection-end-line="21" selection-end-column="235" />
               <folding>
                 <element signature="e#23#32#0" expanded="true" />
               </folding>
@@ -570,16 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/affinities/call_mhci.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="390">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding>
-            <element signature="e#1#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/affinities/call_mhci_class2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
@@ -626,10 +616,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/affinities/old.call_mhcii.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34526855" vertical-offset="0" max-vertical-offset="782">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <caret line="21" column="235" selection-start-line="21" selection-start-column="235" selection-end-line="21" selection-end-column="235" />
           <folding>
             <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/affinities/call_mhci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.039011702" vertical-offset="0" max-vertical-offset="769">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding>
+            <element signature="e#1#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
