@@ -23,7 +23,7 @@ except:
 for allele in mhc_alleles:
     infile = "/cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa".format(mutation)
     allele = allele.replace("_","-").replace("H-2","H2")
-    method = "consensus3""
+    method = "consensus3"
     seq = [('sequence_format', 'auto'), ('sort_output', 'position_in_sequence'), ('cutoff_type', 'none'), ('output_format', 'ascii'), ('allele', allele), ('sequence_file', infile), ('pred_method', method)]
     form = dict(seq)
 
