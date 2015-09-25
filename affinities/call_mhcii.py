@@ -20,7 +20,7 @@ except:
     print "directory exists"
 
 
-with open("/data/nrnb01/ramarty/hla/affinities_random_ii/{0}/all.affinities".format(mutation)) as outfile:
+with open("/data/nrnb01/ramarty/hla/affinities_random_ii/{0}/all.affinities".format(mutation), 'w') as outfile:
     allele = mhc_alleles[0]
     cmd = "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py consensus3 {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa".format(allele, mutation)
     # IEDB_recommended '{0}' /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa > /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities".format(allele, mutation)"
