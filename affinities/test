@@ -9,6 +9,6 @@
 
 which python
 echo 'hello world'
-python /cellar/users/ramarty/Projects/hla_new/scripts/affinities/call_mhcii.py CD177_W33S
+python /cellar/users/ramarty/Projects/hla_new/scripts/affinities/call_mhcii.py CD177_W33S > /data/nrnb01/ramarty/hla/affinities_random_ii/CD177_W33S/all.affinities
 
 echo "done"
