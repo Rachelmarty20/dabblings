@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9075fb9-2d60-496b-b779-4df3ab2ba8af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/affinities/call_mhcii.py" afterPath="$PROJECT_DIR$/affinities/call_mhcii.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dabblings.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="call_mhcii.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/affinities/call_mhcii.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53509784" vertical-offset="0" max-vertical-offset="869">
-              <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.48603353" vertical-offset="0" max-vertical-offset="895">
+              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
               <folding>
                 <element signature="e#23#32#0" expanded="true" />
               </folding>
@@ -603,8 +602,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/affinities/call_mhcii.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53509784" vertical-offset="0" max-vertical-offset="869">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.48603353" vertical-offset="0" max-vertical-offset="895">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
           <folding>
             <element signature="e#23#32#0" expanded="true" />
           </folding>
