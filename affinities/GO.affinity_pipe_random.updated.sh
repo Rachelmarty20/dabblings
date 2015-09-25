@@ -3,7 +3,7 @@
 #$ -o /data/nrnb01_nobackup/ramarty/sge-system-files
 #$ -e /data/nrnb01_nobackup/ramarty/sge-system-files
 #$ -cwd
-#$ -t 1-10000
+#$ -t 1-100
 #$ -l h_rt=08:00:00,h_vmem=1G
 #$ -l long
 #$ -tc 20

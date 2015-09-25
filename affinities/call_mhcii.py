@@ -2,6 +2,8 @@ __author__ = 'rachel'
 
 import os
 import sys
+import time
+import subprocess
 
 mutation = sys.argv[1]
 
@@ -17,11 +19,23 @@ try:
 except:
     print "directory exists"
 
-allele = mhc_alleles[0]
-cmd = '/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py IEDB_recommended {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa > /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities'.format(allele, mutation)
-os.system(cmd)
 
+allele = mhc_alleles[0]
+cmd = "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py consensus3 {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa".format(allele, mutation)
+# IEDB_recommended '{0}' /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa > /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities".format(allele, mutation)"
+cmd_list = cmd.split()
+print cmd_list
+subprocess.call(cmd_list)
+
+
+cmd = "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py consensus3 '{0}' /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa > /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities".format(allele, mutation)
+cmd_list = cmd.split()
+print cmd_list
+subprocess.call(cmd_list)
+
+print "one done"
 
 for allele in mhc_alleles[1:]:
-    cmd = '/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py IEDB_recommended {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa >> /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities'.format(allele, mutation)
-    os.system(cmd)
+    cmd = '/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py consensus3 {0} /cellar/users/ramarty/Projects/hla_new/data/mutations/fasta_files/random/{1}.fsa >> /data/nrnb01/ramarty/hla/affinities_random_ii/{1}/all.affinities'.format(allele, mutation)
+    cmd_list = cmd.split()
+    subprocess.call(cmd_list)

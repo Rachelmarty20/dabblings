@@ -1,0 +1,14 @@
+#! /bin/csh
+#$ -V
+#$ -o /data/nrnb01_nobackup/ramarty/sge-system-files
+#$ -e /data/nrnb01_nobackup/ramarty/sge-system-files
+#$ -cwd
+#$ -l h_rt=08:00:00,h_vmem=1G
+#$ -l long
+
+
+which python
+echo 'hello world'
+python /cellar/users/ramarty/Projects/hla_new/scripts/affinities/call_mhcii.py CD177_W33S
+
+echo "done"

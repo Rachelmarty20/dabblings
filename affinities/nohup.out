@@ -1,0 +1,249 @@
+mkdir: cannot create directory ‘/data/nrnb01/ramarty/hla/affinities_random_ii/MROH5_Q31K’: File exists
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/cellar/users/ramarty/programs/mhc_ii/mhc_II_binding.py", line 987, in <module>
+    infile = sys.stdin.readline().strip()
+IOError: [Errno 9] Bad file descriptor

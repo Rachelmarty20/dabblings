@@ -1,9 +1,10 @@
 #! /bin/csh
+#$ -V
 #$ -S /bin/csh
 #$ -o /data/nrnb01_nobackup/ramarty/sge-system-files
 #$ -e /data/nrnb01_nobackup/ramarty/sge-system-files
 #$ -cwd
-#$ -t 1-10000
+#$ -t 1-1
 #$ -l h_rt=08:00:00,h_vmem=1G
 #$ -l long
 #$ -tc 20
@@ -12,7 +13,9 @@ set mutations=(MROH5_Q31K CD177_W33S TSPAN10_N290T TSPAN10_S21F PNLIPRP2_T53K PN
 
 set mutation=$mutations[$SGE_TASK_ID]
 
+bash ~/.bash_profile
+
 date
 hostname
-python /cellar/users/ramarty/Projects/hla_new/scripts/affinities/call_mhci_class2.py $mutation
+python /cellar/users/ramarty/Projects/hla_new/scripts/affinities/call_mhcii.py $mutation
 date
