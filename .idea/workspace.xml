@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9075fb9-2d60-496b-b779-4df3ab2ba8af" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/affinities/GO.affinity_pipe_random.ii.sh" afterPath="$PROJECT_DIR$/affinities/GO.affinity_pipe_random.ii.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/affinities/old.call_mhcii.py" afterPath="$PROJECT_DIR$/affinities/old.call_mhcii.py" />
     </list>
     <ignored path="dabblings.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="old.call_mhcii.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="old.call_mhcii.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/affinities/old.call_mhcii.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <caret line="21" column="235" selection-start-line="21" selection-start-column="235" selection-end-line="21" selection-end-column="235" />
+            <state vertical-scroll-proportion="0.46814045" vertical-offset="0" max-vertical-offset="769">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding>
                 <element signature="e#23#32#0" expanded="true" />
               </folding>
@@ -104,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GO.affinity_pipe_random.ii.sh" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GO.affinity_pipe_random.ii.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/affinities/GO.affinity_pipe_random.ii.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39011705" vertical-offset="0" max-vertical-offset="769">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
               <caret line="20" column="146" selection-start-line="20" selection-start-column="146" selection-end-line="20" selection-end-column="146" />
               <folding />
             </state>
@@ -147,8 +146,8 @@
         <option value="$PROJECT_DIR$/athlates_hla_genes.txt" />
         <option value="$PROJECT_DIR$/affinities/call_mhci_class2.py" />
         <option value="$PROJECT_DIR$/affinities/call_mhcii.py" />
-        <option value="$PROJECT_DIR$/affinities/old.call_mhcii.py" />
         <option value="$PROJECT_DIR$/affinities/GO.affinity_pipe_random.ii.sh" />
+        <option value="$PROJECT_DIR$/affinities/old.call_mhcii.py" />
       </list>
     </option>
   </component>
@@ -597,16 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/affinities/call_mhcii.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/affinities/call_mhci.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
@@ -617,21 +606,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/affinities/old.call_mhcii.py">
+    <entry file="file://$PROJECT_DIR$/affinities/GO.affinity_pipe_random.ii.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <caret line="21" column="235" selection-start-line="21" selection-start-column="235" selection-end-line="21" selection-end-column="235" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="20" column="146" selection-start-line="20" selection-start-column="146" selection-end-line="20" selection-end-column="146" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/affinities/call_mhcii.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="e#23#32#0" expanded="true" />
+            <element signature="e#24#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/affinities/GO.affinity_pipe_random.ii.sh">
+    <entry file="file://$PROJECT_DIR$/affinities/old.call_mhcii.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39011705" vertical-offset="0" max-vertical-offset="769">
-          <caret line="20" column="146" selection-start-line="20" selection-start-column="146" selection-end-line="20" selection-end-column="146" />
-          <folding />
+        <state vertical-scroll-proportion="0.46814045" vertical-offset="0" max-vertical-offset="769">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
