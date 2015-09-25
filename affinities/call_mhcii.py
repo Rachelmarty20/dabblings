@@ -27,6 +27,7 @@ for allele in mhc_alleles:
     try:
         output.append(subprocess.check_output(cmd_list))
         print allele
+        print subprocess.check_output(cmd_list)
     except:
         print "fail: ", allele
 
